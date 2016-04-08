@@ -1,0 +1,51 @@
+{
+  "name": "angular_template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "body-parser": "1.14.1",
+    "cookie-parser": "1.4.0",
+    "cron": "^1.1.0",
+    "errorhandler": "1.4.2",
+    "express": "~4.9.x",
+    "fs": "0.0.2",
+    "haloapi": "^0.4.1",
+    "http": "0.0.0",
+    "jsdom": "^8.1.0",
+    "lodash": "3.8.0",
+    "mongodb": "1.4.33",
+    "mongojs": "0.18.2",
+    "monk": "1.0.1",
+    "morgan": "1.5.2",
+    "passport": "0.2.1",
+    "passport-facebook": "1.0.3",
+    "passport-local": "1.0.0",
+    "pg": "^4.5.1",
+    "phantom": "^2.0.2",
+    "promise": "6.1.0",
+    "redis": "^2.4.2",
+    "request": "2.44.0",
+    "serve-favicon": "2.3.0",
+    "sha1": "^1.1.1",
+    "sql": "^0.67.0",
+    "yargs": "^4.4.0"
+  },
+  "engines": {
+    "node": "5.4.1",
+    "npm": ">=1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "",
+    ""
+  ],
+  "license": "MIT"
+}
