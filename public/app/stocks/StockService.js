@@ -10,6 +10,13 @@ StockService.factory("StockService", ["$http", "$sessionStorage", "$location", "
         })
     };
 
+    Stock.getSymbols = function () {
+        return $http.get('/api/symbols').then(function (quotes) {
+            return quotes.data;
+        })
+    };
+
+
 
     Stock.transformQuotes = function (quotes) {
         var object = [

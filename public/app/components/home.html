@@ -1,1 +1,4 @@
+<H2>Stock Market Explorer</H2>
+<select ng-model="chosenSymbol" ng-options="o as o for o in symbols" ng-change="onChange()"></select>
+
 <nvd3 options="chart_options" data="chart_data" api="api"  ></nvd3>
