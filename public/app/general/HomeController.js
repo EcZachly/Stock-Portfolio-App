@@ -5,7 +5,7 @@ HomePageController.controller("HomePageController", ["$scope", "$location", "$ro
 
     $scope.chart_options = {
         "chart": {
-            "type": "cumulativeLineChart",
+            "type": "lineChart",
             "height": 450,
             "margin": {
                 "top": 20,
@@ -25,6 +25,11 @@ HomePageController.controller("HomePageController", ["$scope", "$location", "$ro
                 "#bcbd22",
                 "#17becf"
             ],
+            tooltip:{
+                valueFormatter: function(d){
+                    return '$' + d.toFixed(2);
+                }
+            },
             x: function (d){ return d[0]; },
             y: function (d){ return d[1]; },
             "duration": 300,
@@ -40,7 +45,11 @@ HomePageController.controller("HomePageController", ["$scope", "$location", "$ro
             },
             "yAxis": {
                 "axisLabel": "Y Axis",
-                "axisLabelDistance": 0
+                "axisLabelDistance": 0,
+                tickFormat: function(d){
+
+                    return '$' + d.toFixed(2);
+                }
             }
         }
     };
