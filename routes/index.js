@@ -7,6 +7,8 @@ var user  = require('./user');
 
 router.post('/user/new', user.create);
 
-router.get('/stock', stock.getStockData);
+router.get('/quotes', stock.getQuotes);
+
+router.get('/symbols', stock.getDistinctSymbols);
 
 module.exports = router;

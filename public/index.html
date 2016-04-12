@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<!--    Jquery-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    
+<!--    Bootstrap CSS and JS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+<!--    Angular-->
+    <script src="/app/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/app/js/angular-route/angular-route.js"></script>
+    <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+    
+    
+    <title ng-bind="pageTitle">My App</title>
+    
+    
+<!--    My CSS-->
+    <link rel="stylesheet" href="/app/assets/css/main.css">
+    
+
+
+<!--    My Services-->
+    <script type="Text/javascript" src="/app/users/User.js"></script>
+    <script type="Text/javascript" src="/app/stocks/StockService.js"></script>
+
+<!--    My Directives -->
+    <script src="/app/bower_components/d3/d3.js"></script>
+    <script type="Text/javascript" src="/app/bower_components/nvd3/build/nv.d3.js"></script>
+    <script src="app/bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+
+    <link rel="stylesheet" href="/app/bower_components/nvd3/build/nv.d3.css">
+<!--    My Controllers-->
+    <script type="Text/javascript" src="/app/users/loginController.js"></script>
+    <script type="Text/javascript" src="/app/general/HomeController.js"></script>
+    <script type="Text/javascript" src="/app/general/NavBarController.js"></script>
+
+    <!--    My Angular App and My Routes-->
+    <script type="text/javascript" src="/app/app.js"></script>
+    
+
+    
+</head>
+
+<body>
+    <div class="container" ng-view></div>
+<script>
+    
+</script>    
+
+</body>
+</html>
