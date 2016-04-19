@@ -1,4 +1,4 @@
-var startURL = 'http://www.nasdaq.com/screening/companies-by-name.aspx?letter=A&page=2';
+var startURL = 'http://www.nasdaq.com/screening/companies-by-name.aspx?letter=C&page=2';
 var urlParser = require('url');
 var baseURL = 'http://www.nasdaq.com/screening/companies-by-name.aspx?';
 var Nightmare = require('nightmare');
